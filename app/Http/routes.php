@@ -175,7 +175,7 @@ Route::post('contact',array('as' => 'contact','uses' => 'FrontEndController@post
 
 #frontend views
 Route::get('/', array('as' => 'home', function () {
-    return View::make('index');
+    return View::make('admin/login');
 }));
 
 Route::get('blog', array('as' => 'blog', 'uses' => 'BlogController@getIndexFrontend'));
